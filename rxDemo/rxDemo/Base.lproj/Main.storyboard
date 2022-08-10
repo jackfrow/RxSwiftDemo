@@ -41,6 +41,87 @@
             </objects>
             <point key="canvasLocation" x="-512" y="38"/>
         </scene>
+        <!--Practice001 Vc-->
+        <scene sceneID="k4x-bX-v5P">
+            <objects>
+                <viewController storyboardIdentifier="Practice001Vc" id="zxF-qE-Cps" customClass="Practice001Vc" customModule="rxDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAr-cn-pG4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-XM-d77">
+                                <rect key="frame" x="168" y="99" width="78.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8VW-zs-VgB">
+                                <rect key="frame" x="30" y="132" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请至少输入6位账户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkQ-mK-AGm">
+                                <rect key="frame" x="124" y="178" width="166.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjk-gk-pOH">
+                                <rect key="frame" x="170.5" y="211" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yp2-O8-7Kt">
+                                <rect key="frame" x="30" y="244" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请至少输入6位密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFm-K6-GGE">
+                                <rect key="frame" x="132.5" y="290" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmp-UX-CSj">
+                                <rect key="frame" x="180.5" y="391" width="53" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="确认"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PDt-2x-474"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iFm-K6-GGE" firstAttribute="centerX" secondItem="QAr-cn-pG4" secondAttribute="centerX" id="5tZ-m9-rou"/>
+                            <constraint firstItem="8VW-zs-VgB" firstAttribute="leading" secondItem="PDt-2x-474" secondAttribute="leading" constant="30" id="8mo-aP-I3X"/>
+                            <constraint firstItem="Mmp-UX-CSj" firstAttribute="centerX" secondItem="QAr-cn-pG4" secondAttribute="centerX" id="99d-pR-0xy"/>
+                            <constraint firstItem="Mmp-UX-CSj" firstAttribute="top" secondItem="iFm-K6-GGE" secondAttribute="bottom" constant="80" id="CsN-4I-SFW"/>
+                            <constraint firstItem="yp2-O8-7Kt" firstAttribute="leading" secondItem="PDt-2x-474" secondAttribute="leading" constant="30" id="GZB-bo-caQ"/>
+                            <constraint firstItem="cdc-XM-d77" firstAttribute="top" secondItem="PDt-2x-474" secondAttribute="top" constant="55" id="ICl-Qi-pXm"/>
+                            <constraint firstItem="cdc-XM-d77" firstAttribute="centerX" secondItem="QAr-cn-pG4" secondAttribute="centerX" id="Ich-oW-t6a"/>
+                            <constraint firstItem="PDt-2x-474" firstAttribute="trailing" secondItem="yp2-O8-7Kt" secondAttribute="trailing" constant="30" id="JVh-MP-SMW"/>
+                            <constraint firstItem="8VW-zs-VgB" firstAttribute="top" secondItem="cdc-XM-d77" secondAttribute="bottom" constant="12" id="Rz1-Vd-BS3"/>
+                            <constraint firstItem="vkQ-mK-AGm" firstAttribute="centerX" secondItem="QAr-cn-pG4" secondAttribute="centerX" id="S4c-bQ-Jnd"/>
+                            <constraint firstItem="vkQ-mK-AGm" firstAttribute="top" secondItem="8VW-zs-VgB" secondAttribute="bottom" constant="12" id="UuU-Bb-s8I"/>
+                            <constraint firstItem="yp2-O8-7Kt" firstAttribute="top" secondItem="pjk-gk-pOH" secondAttribute="bottom" constant="12" id="VT7-T5-sH1"/>
+                            <constraint firstItem="iFm-K6-GGE" firstAttribute="top" secondItem="yp2-O8-7Kt" secondAttribute="bottom" constant="12" id="d0X-t4-5kC"/>
+                            <constraint firstItem="pjk-gk-pOH" firstAttribute="top" secondItem="vkQ-mK-AGm" secondAttribute="bottom" constant="12" id="fzt-AJ-dAF"/>
+                            <constraint firstItem="pjk-gk-pOH" firstAttribute="centerX" secondItem="QAr-cn-pG4" secondAttribute="centerX" id="mg4-aX-LET"/>
+                            <constraint firstItem="PDt-2x-474" firstAttribute="trailing" secondItem="8VW-zs-VgB" secondAttribute="trailing" constant="30" id="rPS-dH-Eef"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirm" destination="Mmp-UX-CSj" id="3e5-54-SSQ"/>
+                        <outlet property="nameInput" destination="8VW-zs-VgB" id="T19-rS-VMc"/>
+                        <outlet property="nameTip" destination="vkQ-mK-AGm" id="f2X-s9-4QE"/>
+                        <outlet property="passwordInput" destination="yp2-O8-7Kt" id="Tls-Tw-jUb"/>
+                        <outlet property="passwordTip" destination="iFm-K6-GGE" id="84V-tD-kvK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZr-3u-OXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1429" y="753"/>
+        </scene>
         <!--Base Use View Controller-->
         <scene sceneID="xm9-Ux-vNH">
             <objects>
@@ -180,6 +261,21 @@
             </objects>
             <point key="canvasLocation" x="901" y="47"/>
         </scene>
+        <!--Test View Controller-->
+        <scene sceneID="6uD-KA-uhO">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" id="rlj-Rj-UpK" customClass="TestViewController" customModule="rxDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GXb-Dx-yS4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Eg8-Wc-IC6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oCi-Zn-3hT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1602" y="44"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
@@ -190,6 +286,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

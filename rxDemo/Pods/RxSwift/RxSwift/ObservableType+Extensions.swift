@@ -120,6 +120,7 @@ extension ObservableType {
                     disposable.dispose()
                 }
             }
+   
             return Disposables.create(
                 self.asObservable().subscribe(observer),
                 disposable

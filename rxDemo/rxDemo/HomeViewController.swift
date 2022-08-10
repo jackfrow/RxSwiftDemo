@@ -9,25 +9,35 @@ import UIKit
 
 
 enum ExampleStyle:JRModelProtocol {
+    
+   case test
    case base
    case simpleValidation
-    
+   case pra001
     
     var text:String{
         switch self {
+        case .test:
+            return "test"
         case .base:
             return "base"
         case .simpleValidation:
             return "simpleValidation"
+        case .pra001:
+            return "pra001"
         }
     }
     
     var controllerId:String{
         switch self {
+        case .test:
+            return "TestViewController"
         case .base:
             return "BaseUseViewController"
         case .simpleValidation:
             return "SimpleValidationViewController"
+        case .pra001:
+            return "Practice001Vc"
         }
     }
     
@@ -44,7 +54,7 @@ class HomeViewController: JRListViewController {
     
     override func provideDatas() {
         
-        let datas:[ExampleStyle] = [.base,.simpleValidation]
+        let datas:[ExampleStyle] = [.pra001,.test,.base,.simpleValidation]
         
         self.models.append(contentsOf: datas)
         self.tableView.reloadData()
@@ -66,8 +76,6 @@ class HomeViewController: JRListViewController {
              self.navigationController?.pushViewController(vc, animated: true)
              
          }
-    
-         
          
     }
     
